@@ -123,17 +123,11 @@ function membershiprenewalcontrol_civicrm_pre($op, $objectName, &$id, &$params) 
       'return' => array("name"),
     ));
 
-    // Expired, Cancelled, Resigned, Moved interstate
-    // Suspended", "Application Rejected", "Member Expelled", and "Application Withdrawn"
-    //~ $expiredStatusID = 4;
-
-    //~ $nonRenewableStatuses = array($expiredStatusID, 6 , 10, 12, 14, 15, 16, 17);
-
     $nonRenewableStatuses = array();
 
     foreach ($membershipStatus['values'] as $key => $status) {
       if (in_array($status['name'],
-        array('Expired', 'Cancelled', 'Resigned', 'Moved interstate', 'Suspended', 'Application Rejected', 'Member Expelled', 'Application Withdrawn'))
+        array('Expired', 'Cancelled', 'Resigned', 'Deceased', 'Suspended (discplinary)', 'Application rejected', 'Expelled', 'Application withdrawn', 'Transferred to another membership type'))
         ) {
         $nonRenewableStatuses[] = $status['id'];
       }
