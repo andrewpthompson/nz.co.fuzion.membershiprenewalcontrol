@@ -2,14 +2,14 @@
 <extension key="nz.co.fuzion.membershiprenewalcontrol" type="module">
   <file>membershiprenewalcontrol</file>
   <name>Membership Renewal Fix</name>
-  <description>Causes certain membership statuses to be unrenewable, resulting in a new membership</description>
+  <description>Causes certain membership statuses to be unrenewable, resulting in a new membership. **PRRPS NOTE: This extension has been modified by PRRPS to use its customised membership statuses (hard-coded).**</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>Eileen</author>
     <email>eileen@fuzion.co.nz</email>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page">http://FIXME</url>
+    <url desc="Main Extension Page">https://github.com/andrewpthompson/nz.co.fuzion.membershiprenewalcontrol/blob/PRRPS-customisations/info.xml</url>
     <url desc="Documentation">http://FIXME</url>
     <url desc="Support">http://FIXME</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
